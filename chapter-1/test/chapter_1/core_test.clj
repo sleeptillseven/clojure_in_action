@@ -14,3 +14,16 @@
       (is (= 0 (my-addition -1 1)))
       (is (= 0 (my-addition -0 -0)))
       (is (= -2 (my-addition -1 -1))))))
+
+(deftest check-login-test
+  (testing "check login/password against local store"
+    (testing "correct input"
+      (is (check-login "kyle" "secretk"))
+      (is (check-login "siva" "secrets"))
+      (is (check-login "rob" "secretr"))
+      (is (check-login "george" "secretg"))
+    (testing "wrong input"
+      (not (check-login "kyle" "seCret"))
+      (not (check-login "siva" "seet"))
+      (not (check-login "rob" "secreto"))
+      (not (check-login "george" "secrtg"))))))
