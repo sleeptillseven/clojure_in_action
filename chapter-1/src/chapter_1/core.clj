@@ -5,7 +5,7 @@
 ; a simple add function for two operands
 (defn my-addition [operand1 operand2] (+ operand1 operand2))
 
-; users hash map
+; hash map with user's names, credentials and number of pets
 (def users {"kyle" {:password "secretk" :number-pets 2}
             "siva" {:password "secrets" :number-pets 4}
             "rob" {:password "secretr" :number-pets 6}
