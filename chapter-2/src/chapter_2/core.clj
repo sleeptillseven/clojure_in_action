@@ -15,3 +15,9 @@
 (defn check-login [username password]
   (let [actual-password ((users username) :password)]
     (= actual-password password)))
+
+(defn average-pets []
+  (let [user-data (vals users)
+        number-pets (map :number-pets user-data)
+        total (apply + number-pets)]
+    (/ total (count users))))
