@@ -27,3 +27,7 @@
       (not (check-login "siva" "seet"))
       (not (check-login "rob" "secreto"))
       (not (check-login "george" "secrtg"))))))
+
+(deftest average-pets-test
+  (testing "average number of pets"
+    (is (= 5 (average-pets)))))

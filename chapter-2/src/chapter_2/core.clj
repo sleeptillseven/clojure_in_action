@@ -19,5 +19,6 @@
 (defn average-pets []
   (let [user-data (vals users)
         number-pets (map :number-pets user-data)
-        total (apply + number-pets)]
+        total (apply + number-pets)
+        _ (println "total number of pets: " total)]
     (/ total (count users))))
