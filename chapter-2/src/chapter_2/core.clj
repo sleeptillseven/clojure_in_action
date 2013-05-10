@@ -22,3 +22,23 @@
         total (apply + number-pets)
         _ (println "total number of pets: " total)]
     (/ total (count users))))
+
+
+;; example of a do form
+;;
+;; some trivial definitions for compile reasons
+(def is-something-true? true)
+
+(defn log-message [msg]
+  (println msg))
+
+(def store-something-in-db nil)
+
+(def return-useful-value "done with hard work!")
+
+(defn do-many-things []
+  (if (is-something-true?)
+    (do
+      (log-message "in true branch")
+      (store-something-in-db)
+      (return-useful-value))))
