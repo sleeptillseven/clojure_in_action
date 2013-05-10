@@ -1,6 +1,6 @@
-(ns chapter-1.core-test
+(ns chapter-2.core-test
   (:require [clojure.test :refer :all]
-            [chapter-1.core :refer :all]))
+            [chapter-2.core :refer :all]))
 
 (deftest my-addition-test
   (testing "my addition function"

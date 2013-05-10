@@ -1,4 +1,4 @@
-(ns chapter-1.core)
+(ns chapter-2.core)
 
 (println "*** code from chapter 1 ***")
 
