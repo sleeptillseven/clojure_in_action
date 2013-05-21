@@ -1,6 +1,6 @@
 (ns chapter-2.core)
 
-(println "*** code from chapter 1 ***")
+(println "*** code from chapter 2 ***")
 
 ;; a simple add function for two operands
 (defn my-addition [operand1 operand2] (+ operand1 operand2))
